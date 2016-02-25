@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchEvent } from '../actions/index';
 import { Link } from 'react-router';
+import Loading from 'react-loading';
 
 class EventShow extends Component {
   componentWillMount() {
@@ -53,6 +54,16 @@ class EventShow extends Component {
   }
 
   render() {
+    const { event } = this.props;
+
+    if (!event) {
+      return (
+        <div className="loading-div">
+          <Loading type="balls" color="#e3e3e3" height="200" width="200" />
+        </div>
+      );
+    }
+
     return (
       <div className="events-show">
         {this.renderMatch()}
