@@ -10,23 +10,52 @@ class EventShow extends Component {
 
   renderMatch() {
     return this.props.event.map((match) => {
-      console.log(match);
       return (
-        <li className="list-group-item" key={match.id}>
-          {match.event_id}
-        </li>
+        <table className="table table-hover" key={match.id}>
+          <thead>
+            <tr>
+              <th>{match.fighter1_first_name} {match.fighter1_last_name}</th>
+              <th>vs</th>
+              <th>{match.fighter2_first_name} {match.fighter2_last_name}</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><img src={match.fighter1_profile_image} className="fighter-profile left" /></td>
+              <td>&nbsp;</td>
+              <td><img src={match.fighter2_profile_image} className="fighter-profile right" /></td>
+            </tr>
+            <tr>
+              <td>{match.fighter1record}</td>
+              <td>Record</td>
+              <td>{match.fighter2record}</td>
+            </tr>
+            <tr>
+              <td>{match.fighter1height}</td>
+              <td>Height</td>
+              <td>{match.fighter2height}</td>
+            </tr>
+            <tr>
+              <td>{match.fighter1weight}</td>
+              <td>Weight</td>
+              <td>{match.fighter2weight}</td>
+            </tr>
+            <tr>
+              <td>{match.fighter1reach}</td>
+              <td>Reach</td>
+              <td>{match.fighter2reach}</td>
+            </tr>
+          </tbody>
+        </table>
       )
     })
   }
 
   render() {
-    const { event } = this.props;
-
     return (
-      <div>
-        <ul className="list-group">
-          {this.renderMatch()}
-        </ul>
+      <div className="match-container">
+        {this.renderMatch()}
       </div>
     )
   }
