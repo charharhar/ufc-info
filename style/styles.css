@@ -1,5 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
-.match-container {
+html,
+body {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*               *
+*** EVENTS SHOW ***
+ *               */
+
+.events-show {
   height:100%;
 }
 
@@ -12,15 +32,71 @@
 .fighter-profile.left { border: 2px solid #C51E26; }
 .fighter-profile.right { border: 2px solid #295499; }
 
-th, td {
+.events-show th,
+.events-show td {
   text-align: center;
   width:33%;
 }
 
-table {
+.events-show table {
   width: 70% !important;
   margin-top: 50px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
+/*               *
+*** EVENTS MAIN ***
+ *               */
+
+.events-main {
+  background-color: #eee
+}
+
+.events-main ul {
+  margin: 0;
+}
+
+.events-heading,
+.events-image {
+  float: left;
+}
+
+.events-heading {
+  margin-left: 30px;
+}
+
+.events-image {
+  width: 50%;
+}
+
+.events-image img {
+  height: 250px;
+}
+
+.events-link {
+  width: 75%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.events-link li {
+  border-radius: 10px !important;
+  margin: 20px 0;
+}
+
+.events-link h1 {
+  color: #295499;
+  margin: 20px 0;
+}
+
+.events-link h2 {
+  color: #222;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.events-link h3 {
+  color: #C51E26;
+  margin: 10px 0;
+}

@@ -2,12 +2,12 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
-import FightsIndex from './components/fights-index';
+import EventsMain from './components/events-main';
 import EventShow from './components/event-show';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={FightsIndex} />
+    <IndexRoute component={EventsMain} />
     <Route path="events/:id" component={EventShow} />
   </Route>
 )

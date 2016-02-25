@@ -1,4 +1,3 @@
-
 import '../../style/styles.css';
 import React, { Component } from 'react';
 

@@ -54,7 +54,7 @@ class EventShow extends Component {
 
   render() {
     return (
-      <div className="match-container">
+      <div className="events-show">
         {this.renderMatch()}
       </div>
     )
