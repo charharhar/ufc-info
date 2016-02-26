@@ -1,6 +1,6 @@
 import { FETCH_NEWS_ALL, FETCH_NEWS } from '../actions';
 
-const INITIAL_STATE = { all: [], news: [] };
+const INITIAL_STATE = { all: [], news: null };
 
 export default function(state = INITIAL_STATE, action) {
   switch (action.type) {

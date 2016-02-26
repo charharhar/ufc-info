@@ -7,6 +7,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #eee;
+  height: 100%;
+  width: 100%;
 }
 
 h1,
@@ -16,9 +18,9 @@ h3 {
   padding: 0;
 }
 
-/*               *
-***   NAV BAR   ***
- *               */
+/*                 *
+***    NAV BAR    ***
+ *                 */
 
 .navbar-main {
   width: 100%;
@@ -55,9 +57,9 @@ h3 {
   color:red;
 }
 
-/*               *
-*** EVENTS SHOW ***
- *               */
+/*                 *
+***  EVENTS SHOW  ***
+ *                 */
 
 .events-show {
   height:100%;
@@ -85,9 +87,9 @@ h3 {
   transform: translateX(-50%);
 }
 
-/*               *
-*** EVENTS MAIN ***
- *               */
+/*                 *
+***  EVENTS MAIN  ***
+ *                 */
 
 .events-main {
   background-color: #eee
@@ -157,9 +159,101 @@ h3 {
   overflow: hidden;
 }
 
-/*               *
-***   FOOTER    ***
- *               */
+/*                 *
+*** FIGHTERS MAIN ***
+ *                 */
+
+.fighter-box {
+  display: inline-block;
+}
+
+.fighter-image img {
+  height: 170px;
+}
+
+/*                 *
+***   NEWS MAIN   ***
+ *                 */
+
+.news-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.news-article {
+  width: 25%;
+  display: inline-block;
+  padding: 0;
+}
+
+.news-card {
+  height: 300px;
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.news-image {
+
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.news-image img {
+  width:100%;
+}
+
+.news-heading {
+  padding: 10px;
+
+}
+
+/*                 *
+***  MEDIA MAIN   ***
+ *                 */
+
+.media-gallery-container {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.media-gallery-container h2,
+.media-gallery-container h4 {
+  color: #222;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.media-gallery {
+  width: 100%;
+}
+
+.media-gallery-photo {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.media-gallery-photo img {
+  width: 100%;
+}
+
+.media-gallery-photo p {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  bottom: 0;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+/*                 *
+***    FOOTER     ***
+ *                 */
 
 .footer {
   height: 100px;

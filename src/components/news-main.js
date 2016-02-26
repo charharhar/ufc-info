@@ -11,16 +11,27 @@ class NewsMain extends Component {
   renderNews() {
     return this.props.news.map((news) => {
       return (
-        <li className="list-group-item">{news.id}</li>
+        <div className="news-article col-md-3 col-sm-6" key={news.id}>
+          <Link to={`/news/${news.id}`}>
+            <div className="news-card">
+              <div className="news-image">
+                <img src={news.thumbnail} />
+              </div>
+              <div className="news-heading">
+                <h3>{news.title}</h3>
+              </div>
+            </div>
+          </Link>
+        </div>
       )
     })
   }
 
   render() {
     return (
-      <ul className="list-group">
+      <div className="news-container row">
         {this.renderNews()}
-      </ul>
+      </div>
     )
   }
 }

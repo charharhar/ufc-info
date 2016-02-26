@@ -8,7 +8,9 @@ import EventShow from './components/event-show';
 import FightersMain from './components/fighters-main';
 // import FightersShow from './components/fighters-show';
 import NewsMain from './components/news-main';
+import NewsShow from './components/news-show';
 import MediaMain from './components/media-main';
+import MediaShow from './components/media-show';
 
 export default (
   <Route path="/" component={App}>
@@ -17,6 +19,8 @@ export default (
     <Route path="events/:id" component={EventShow} />
     <Route path="fighters" component={FightersMain} />
     <Route path="news" component={NewsMain} />
+    <Route path="news/:id" component={NewsShow} />
     <Route path="media" component={MediaMain} />
+    <Route path="media/:id" component={MediaShow} />
   </Route>
 )
