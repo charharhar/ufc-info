@@ -22,6 +22,7 @@ h3 {
 
 .navbar-main {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .navbar-main ul {
@@ -43,7 +44,7 @@ h3 {
   font-weight: 300;
   text-align: center;
   padding: 25px;
-  transition: all .2s;
+  transition: all .3s;
 }
 
 .navbar-main li:hover {
@@ -119,14 +120,20 @@ h3 {
   transform: translateX(-50%);
 }
 
+.events-link li:hover {
+  box-shadow: 0px 6px 22px 0px rgba(50, 50, 50, 0.75);
+}
+
 .events-link li {
   border-radius: 10px !important;
   margin: 20px 0;
+  transition: .5s all;
 }
 
 .events-link h1 {
   color: #295499;
   margin: 20px 0;
+  font-weight: 600;
 }
 
 .events-link h2 {
@@ -138,6 +145,8 @@ h3 {
 .events-link h3 {
   color: #C51E26;
   margin: 10px 0;
+  font-size: 1.3em;
+  letter-spacing: .1em;
 }
 
 .loading-div {

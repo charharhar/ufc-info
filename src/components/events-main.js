@@ -38,7 +38,12 @@ class EventsMain extends Component {
                 <div className="events-heading">
                   <h1>{event.base_title}</h1>
                   <h2>{event.title_tag_line}</h2>
-                  <h3>{`${formatDate(event.event_date)} @ ${event.event_time_text}`}</h3>
+                  <h3>
+                    {`${formatDate(event.event_date)}
+                    ${(event.event_time_text) ? '@' : ''}
+                    ${event.event_time_text}
+                    ${(event.event_time_text) ? (event.event_time_zone_text) : ''}`}
+                  </h3>
                 </div>
                 <div style={{clear: 'both'}}></div>
               </li>
